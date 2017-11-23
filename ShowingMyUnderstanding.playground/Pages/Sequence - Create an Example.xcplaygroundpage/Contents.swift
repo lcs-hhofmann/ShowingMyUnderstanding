@@ -22,9 +22,39 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
+canvas.drawShapesWithBorders = false
 
-// Replace this comment and add your code below...
+//head
+canvas.fillColor = Color.green
+canvas.drawEllipse(centreX: 150, centreY: 100, width: 300, height: 200)
 
+//mouth
+canvas.fillColor = Color.red
+canvas.drawEllipse(centreX: 150, centreY: 80, width: 200, height: 100)
+canvas.fillColor = Color.blue
+canvas.drawEllipse(centreX: 150, centreY: 80, width: 190, height: 70)
+canvas.fillColor =  Color.black
+canvas.drawEllipse(centreX: 150, centreY: 80, width: 180, height: 40)
+
+// left eye
+canvas.fillColor = Color.green
+canvas.drawEllipse(centreX: 50, centreY: 175, width: 90, height: 100)
+canvas.fillColor = Color.red
+canvas.drawEllipse(centreX: 50, centreY: 175, width: 70, height: 80)
+canvas.fillColor = Color.blue
+canvas.drawEllipse(centreX: 50, centreY: 175, width: 50, height: 60)
+canvas.fillColor = Color.black
+canvas.drawEllipse(centreX: 50, centreY: 175, width: 20, height: 10)
+
+//right eye
+canvas.fillColor = Color.green
+canvas.drawEllipse(centreX: 250, centreY: 175, width: 90, height: 100)
+canvas.fillColor = Color.red
+canvas.drawEllipse(centreX: 250, centreY: 175, width: 70, height: 80)
+canvas.fillColor = Color.blue
+canvas.drawEllipse(centreX: 250, centreY: 174, width: 50, height: 60)
+canvas.fillColor = Color.black
+canvas.drawEllipse(centreX: 250, centreY: 175, width: 20, height: 10)
 
 
 
