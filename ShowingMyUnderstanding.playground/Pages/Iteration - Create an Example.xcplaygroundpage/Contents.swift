@@ -19,7 +19,20 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+//background
+canvas.fillColor = Color.init(hue: 330, saturation: 74, brightness: 100, alpha: 50)
+canvas.drawRectangle(centreX: 150, centreY: 150, width: 302, height: 302)
+
+
+//make the shape
+canvas.drawShapesWithFill = false
+canvas.borderColor = Color.red
+canvas.defaultBorderWidth = Int(1.95)
+canvas.translate(byX: 150, byY: 150)
+for degrees in stride(from: 0, to: 360, by: 10) {
+    canvas.drawEllipse(centreX: 0, centreY: 50, width: 110, height: 110)
+    canvas.rotate(by: Degrees(degrees))
+}
 
 /*:
  ## Template code
