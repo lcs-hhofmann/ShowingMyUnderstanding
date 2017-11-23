@@ -19,7 +19,24 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this command and add your code below...
+canvas.drawShapesWithBorders = false
+
+// Generate a random number
+let number = random(from: 0, toButNotIncluding: 2)
+
+//hue
+let hue = random(from: 0, toButNotIncluding: 361)
+
+//make the squares
+for c in stride(from: 15, to: 300, by: 30) {
+    for y in stride(from: 15, to: 300, by: 30){
+        let brightness = (100 - c / 3) + (100 - y / 3)
+        canvas.fillColor = Color(hue: hue, saturation: 80, brightness: brightness, alpha: 100)
+        if number == 1 {
+            canvas.drawEllipse(centreX: c, centreY: y, width: 20, height: 20)
+        }
+        else { canvas.drawRectangle(centreX: c, centreY: y, width: 20, height: 20)
+        }}}
 
 /*:
  ## Template code

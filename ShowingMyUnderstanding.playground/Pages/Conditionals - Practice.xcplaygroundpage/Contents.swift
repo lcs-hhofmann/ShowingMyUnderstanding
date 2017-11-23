@@ -28,7 +28,17 @@ let canvas = Canvas(width: 300, height: 300)
 // Generate a random number
 let number = random(from: 0, toButNotIncluding: 2)
 
-// Replace this comment and add your code below...
+//hue
+let hue = random(from: 0, toButNotIncluding: 361)
+
+//make the shapes
+for i in stride(from: 10, to: 300, by: 30) {
+    if number == 1 {canvas.drawEllipse(centreX: i, centreY: i, width: 20, height: 20)
+    }
+else
+    { canvas.drawRectangle(centreX: i, centreY: i, width: 20, height: 20)
+    }}
+
 
 /*:
  ## Template code
