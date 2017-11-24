@@ -33,6 +33,8 @@ let hue = random(from: 0, toButNotIncluding: 361)
 
 //make the shapes
 for i in stride(from: 10, to: 300, by: 30) {
+    let wowza = i + 70
+    canvas.fillColor = Color.init(hue: hue, saturation: 100, brightness: wowza, alpha: 50)
     if number == 1 {canvas.drawEllipse(centreX: i, centreY: i, width: 20, height: 20)
     }
 else
