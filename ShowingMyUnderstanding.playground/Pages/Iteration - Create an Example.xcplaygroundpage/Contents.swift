@@ -20,13 +20,16 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 //background
-canvas.fillColor = Color.init(hue: 330, saturation: 74, brightness: 100, alpha: 50)
-canvas.drawRectangle(centreX: 150, centreY: 150, width: 302, height: 302)
+for i in stride(from: 0, to: 300, by: 1) {
+    let hue = i
+    canvas.lineColor = Color.init(hue: hue, saturation: 100, brightness: 100, alpha: 100)
+    canvas.drawLine(fromX: -100010, fromY: 0, toX: 300, toY: i)
+}
 
 
 //make the shape
 canvas.drawShapesWithFill = false
-canvas.borderColor = Color.red
+canvas.borderColor = Color.white
 canvas.defaultBorderWidth = Int(1.95)
 canvas.translate(byX: 150, byY: 150)
 for degrees in stride(from: 0, to: 360, by: 10) {
