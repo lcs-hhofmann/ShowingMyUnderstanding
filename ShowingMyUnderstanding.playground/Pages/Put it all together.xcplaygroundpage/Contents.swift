@@ -25,10 +25,10 @@ let canvas = Canvas(width: 300, height: 300)
 let hue = random(from: 1, toButNotIncluding: 361)
 
 //background
-for i in stride(from: 0, to: 310, by: 10) {
+for i in stride(from: 0, to: 310, by: 5) {
     let bright = i + 100
     canvas.lineColor = Color.init(hue: hue, saturation: 100, brightness: bright, alpha: 100)
-    canvas.defaultLineWidth = 10
+    canvas.defaultLineWidth = 5
     canvas.drawLine(fromX: i, fromY: 0, toX: i, toY: i+10)
 }
 
