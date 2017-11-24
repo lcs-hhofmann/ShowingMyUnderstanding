@@ -44,7 +44,9 @@ canvas.drawEllipse(centreX: 50, centreY: 175, width: 70, height: 80)
 canvas.fillColor = Color.blue
 canvas.drawEllipse(centreX: 50, centreY: 175, width: 50, height: 60)
 canvas.fillColor = Color.black
-canvas.drawEllipse(centreX: 50, centreY: 175, width: 20, height: 10)
+canvas.drawEllipse(centreX: 50, centreY: 175, width: 27, height: 17)
+canvas.fillColor = Color.yellow
+canvas.drawEllipse(centreX: 50, centreY: 175, width: 5, height: 17)
 
 //right eye
 canvas.fillColor = Color.green
@@ -54,7 +56,9 @@ canvas.drawEllipse(centreX: 250, centreY: 175, width: 70, height: 80)
 canvas.fillColor = Color.blue
 canvas.drawEllipse(centreX: 250, centreY: 174, width: 50, height: 60)
 canvas.fillColor = Color.black
-canvas.drawEllipse(centreX: 250, centreY: 175, width: 20, height: 10)
+canvas.drawEllipse(centreX: 250, centreY: 175, width: 27, height: 17)
+canvas.fillColor = Color.yellow
+canvas.drawEllipse(centreX: 250, centreY: 175, width: 5, height: 17)
 
 
 
